@@ -1,16 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Snake APP Litle</title>
+  <title>Juegos Arcade crimart</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      color: white;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      width: 100%;
+      max-width: 600px;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    header p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      color: #f0f0f0;
+    }
+    
+    main {
+      width: 100%;
+      max-width: 600px;
+    }
+    
+    nav {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    nav h2 {
+      color: #333;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style: none;
+    }
+    
+    nav li {
+      margin-bottom: 15px;
+    }
+    
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.2em;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    nav a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    }
+    
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      
+      header p {
+        font-size: 1em;
+      }
+      
+      nav h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>Juegos Arcade Crimart</h1>
+    <p>Bienvenido a Juegos Arcade Crimart, donde encontrarás clásicos juegos arcade para divertirte</p>
+  </header>
+  
   <main>
-    <h1>Skane Hola Voy por Azure</h1>
+    <nav>
+      <h2>Selecciona un juego</h2>
+      <ul>
+        <li><a href="snake.html">🐍 Snake</a></li>
+      </ul>
+    </nav>
   </main>
 </body>
 
